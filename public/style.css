@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080b12;
+  color: #f5f7ff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.shell {
+  width: min(900px, 92%);
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid #252b3b;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.logo {
+  background: #5865f2;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.status {
+  color: #64d99b;
+  font-size: 12px;
+}
+
+.status i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #64d99b;
+  border-radius: 50%;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 10px;
+}
+
+.eyebrow {
+  color: #8793ff;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: clamp(34px, 7vw, 58px);
+  margin: 20px 0;
+}
+
+h1 span {
+  color: #7280ff;
+}
+
+.sub {
+  color: #a0a8bb;
+  line-height: 1.8;
+  max-width: 550px;
+  margin: auto;
+}
+
+.discord-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 28px;
+  border-radius: 12px;
+  background: #5865f2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.discord-button:hover {
+  background: #4752c4;
+}
+
+.privacy, small {
+  color: #8992a7;
+  font-size: 12px;
+}
+
+.panel {
+  background: #111725;
+  border: 1px solid #293248;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  margin-top: 8px;
+}
+
+.count {
+  color: #9ca8ff;
+  font-size: 12px;
+}
+
+.progress {
+  height: 9px;
+  background: #252d40;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#bar {
+  width: 0;
+  height: 100%;
+  background: #6876ff;
+  transition: width .3s;
+}
+
+.quests {
+  margin-top: 22px;
+}
+
+.notice {
+  margin-top: 25px;
+  padding: 15px;
+  background: #20283a;
+  border-radius: 10px;
+  color: #aab4ca;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  color: #69738b;
+  padding: 35px 0;
+  font-size: 12px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px auto;
+}
+
+.avatar {
+  background: #5865f2;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.ghost {
+  background: transparent;
+  color: white;
+  border: 1px solid #59647b;
+  padding: 9px 14px;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
