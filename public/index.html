@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Questify — Discord Quest Tracker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav">
+      <div class="brand"><span class="logo">Q</span><span>QUESTIFY</span></div>
+      <span class="status"><i></i> ONLINE</span>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">YOUR QUEST DASHBOARD</p>
+      <h1>Track your <span>Discord Quests.</span></h1>
+      <p class="sub">Sign in securely, keep your quest checklist organized, and track your progress.</p>
+
+      <div id="account" class="account hidden">
+        <div id="avatar" class="avatar">Q</div>
+        <div>
+          <strong id="username">Discord user</strong>
+          <small>Signed in with Discord</small>
+        </div>
+        <button id="logout" class="ghost">Log out</button>
+      </div>
+
+      <a id="login" class="discord-button" href="/auth/discord">
+        <span>◉</span> Continue with Discord
+      </a>
+      <p class="privacy">Official Discord OAuth sign-in · We never ask for your account token.</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">YOUR CHECKLIST</p>
+          <h2>Quest progress</h2>
+        </div>
+        <span id="count" class="count">0 / 0 DONE</span>
+      </div>
+
+      <div class="progress"><div id="bar"></div></div>
+      <div id="quests" class="quests"></div>
+
+      <p class="notice">
+        <strong>Note:</strong> This starter app is a manual progress tracker.
+        It does not automate Discord Quests or claim rewards.
+        Complete eligible tasks through Discord itself, then update your checklist here.
+      </p>
+    </section>
+
+    <footer>QUESTIFY · Community-made progress tracker</footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
